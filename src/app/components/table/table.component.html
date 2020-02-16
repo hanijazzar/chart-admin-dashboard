@@ -1,0 +1,14 @@
+<table class="table">
+  <thead class="text-bold">
+    <th *ngFor="let header of headers">
+      {{ header }}
+    </th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of rows">
+      <td *ngFor="let item of row | keyvalue">
+       {{item.value}}
+      </td>
+    </tr>
+  </tbody>
+</table>

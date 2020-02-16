@@ -1,0 +1,34 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div
+          class="card card-clickable"
+          (click)="goToChartDetails(pieChartFields.id)"
+        >
+          <div class="card-header card-header-warning">
+            <h4 class="card-title">Pie Chart</h4>
+            <p class="card-category">Payment method used by users</p>
+          </div>
+          <div class="card-body">
+            <app-chart [chart]="pieChartFields"></app-chart>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="card card-clickable"
+          (click)="goToChartDetails(barChartFields.id)"
+        >
+          <div class="card-header card-header-success">
+            <h4 class="card-title">Bar Chart</h4>
+            <p class="card-category">Revenue per year</p>
+          </div>
+          <div class="card-body">
+            <app-chart [chart]="barChartFields"></app-chart>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
